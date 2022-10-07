@@ -37,11 +37,15 @@ Start the server
 
 ## Roadmap
 
-- Create route for the calculator/landing page 
+[![trello](https://img.shields.io/badge/Trello-Kanban-blue)](https://trello.com/b/sZhFXoDW/bmr-calculator)
 
-- Create basic form for input
+- ~~Create route for the calculator/landing page~~
+
+- ~~Create basic form for input~~
 
 - Validate form inputs
+
+- Configure POST request
 
 - Setup connection to MySQL database
 
