@@ -13,7 +13,7 @@ Each input will be stored in a MySQL database (presumed good faith) where down t
 Clone the project
 
 ```bash
-    git clone https://github.com/mahonyodhran/bmr-calculator-python.git
+  git clone https://github.com/mahonyodhran/bmr-calculator-python.git
 ```
 
 Create a virtual environment in the root directory
