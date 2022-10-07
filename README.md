@@ -1,31 +1,53 @@
-# Flask Template
+# BMR Calculator
+
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/mahonyodhran/bmr-calculator-python/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/mahonyodhran/bmr-calculator-python/tree/master)
 
-## [How To Create Repo Based On Template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
----
+Application to calculate the users Basel Metabolic Rate ([BMR](https://en.wikipedia.org/wiki/Basal_metabolic_rate)).
+Each input will be stored in a MySQL database (presumed good faith) where down the line analysis of the records will be done and displayed.
 
-## Setup your own virtual environment
 
-```console
-$ python -m venv env
+## Run Locally
+
+Clone the project
+
+```bash
+    git clone https://github.com/mahonyodhran/bmr-calculator-python.git
 ```
 
----
+Create a virtual environment in the root directory
 
-## Activate the virtual environment
-
-```console
-$ source env/Scripts/activate
+```bash
+  python -m venv venv
 ```
 
----
+Install dependencies
 
-## Install the requirements via _requirements.txt_
-
-```console
-$ python -m venv env
+```bash
+  pip install -r requirements.txt
 ```
 
----
+Start the server
+
+```bash
+  flask run
+```
+
+
+## Roadmap
+
+- Create route for the calculator/landing page 
+
+- Create basic form for input
+
+- Validate form inputs
+
+- Setup connection to MySQL database
+
+- Insert record into database for each input
+
+- Setup page to display all records
+
+- Setup some sort of data analysis route
+
