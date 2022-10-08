@@ -3,11 +3,7 @@
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/mahonyodhran/bmr-calculator-python/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/mahonyodhran/bmr-calculator-python/tree/master)
 
-[![Heroku](https://img.shields.io/badge/Heroku-Deployed-blueviolet)](https://bmr-calculator-python.herokuapp.com/)
-
 ![Heroku](https://pyheroku-badge.herokuapp.com/?app=bmr-calculator-python&style=plastic)
-
-
 
 Application to calculate the users Basel Metabolic Rate ([BMR](https://en.wikipedia.org/wiki/Basal_metabolic_rate)).
 Each input will be stored in a MySQL database (presumed good faith) where down the line analysis of the records will be done and displayed.
