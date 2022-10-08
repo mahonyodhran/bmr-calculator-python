@@ -22,14 +22,14 @@ def mifflin_st_jeor(age, weight, height, gender):
 
 def send_message(message, sender, receiver):
     with smtplib.SMTP(
-        os.environ.get("SMTP_HOST"), os.environ.get("SMTP_POST")
+        os.environ['SMTP_HOST'], os.environ['SMTP_PORT']
     ) as server:
-        server.login(os.environ.get("SMTP_USER"), os.environ.get("SMTP_PASS"))
+        server.login(os.environ['SMTP_USER'], os.environ['SMTP_PASS'])
         server.sendmail(sender, receiver, message.as_string())
 
 
 def make_message(email, bmr):
-    sender = os.environ.get("DEVEMAIL")
+    sender = os.environ['DEVEMAIL']
     message = MIMEText(f"Your BMR is: {bmr}")
     message["Subject"] = "Your BMR is here!"
     message["From"] = sender
