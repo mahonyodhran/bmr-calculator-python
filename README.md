@@ -48,11 +48,15 @@ Start the server
 
 - ~~Create route for the calculator/landing page~~
 
-- ~~Create basic form for input~~
+- ~~Create basic form for input~~ 
 
-- Validate form inputs
+- ~~Validate form inputs~~
 
-- Configure POST request
+- ~~Configure POST request~~
+
+- ~~Calculate BMR off of form submission~~
+
+- Send email on submission (option maybe)
 
 - Setup connection to MySQL database
 
