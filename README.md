@@ -1,12 +1,15 @@
 # BMR Calculator
 
+## Description
+Application to calculate the users Basel Metabolic Rate ([BMR](https://en.wikipedia.org/wiki/Basal_metabolic_rate)).
+Each input will be stored in a MySQL database (presumed good faith) where down the line analysis of the records will be done and displayed.
+
+
+## Status
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/mahonyodhran/bmr-calculator-python/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/mahonyodhran/bmr-calculator-python/tree/master)
 
 ![Heroku](https://pyheroku-badge.herokuapp.com/?app=bmr-calculator-python&style=plastic)
-
-Application to calculate the users Basel Metabolic Rate ([BMR](https://en.wikipedia.org/wiki/Basal_metabolic_rate)).
-Each input will be stored in a MySQL database (presumed good faith) where down the line analysis of the records will be done and displayed.
 
 
 ## Run Locally
@@ -42,6 +45,13 @@ Start the server
 ```
 
 
+---
+
+` Note: If running locally, due to ENV_VARS being set for SMTP server using please do not select to receive email or it will crash - alternatively, create a .env file and make SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, DEVEMAIL variables with . I used Mailtrp for this, the email actually goes to that sandbox rather than your inbox.`
+
+---
+
+
 ## Roadmap
 
 [![trello](https://img.shields.io/badge/Trello-Kanban-blue)](https://trello.com/b/sZhFXoDW/bmr-calculator)
@@ -56,7 +66,9 @@ Start the server
 
 - ~~Calculate BMR off of form submission~~
 
-- Send email on submission (option maybe)
+- ~~Send email on submission~~
+
+- Make email optional (prevents crashing on local runs with no ENV_VAR - works fine on Heroku)
 
 - Setup connection to MySQL database
 
