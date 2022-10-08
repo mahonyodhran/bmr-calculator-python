@@ -29,10 +29,16 @@ Install dependencies
   pip install -r requirements.txt
 ```
 
+Run tests
+
+```bash
+  python -m pytest -v tests/
+```
+
 Start the server
 
 ```bash
-  flask run
+  python app.py
 ```
 
 
