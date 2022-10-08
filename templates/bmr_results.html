@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="display-4">Results</h1>
+
+<table class="table" style="text-align: center;">
+    <thead>
+      <tr class="table-secondary">
+        <th scope="col">Email</th>
+        <th scope="col">Age</th>
+        <th scope="col">Height</th>
+        <th scope="col">Weight</th>
+        <th scope="col">Gender</th>
+        <th scope="col">BMR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for item in user %}
+            <td>{{ item }}</td>
+        {% endfor %}
+            <td>TBWO</td>
+      </tr>
+    </tbody>
+  </table>
+
+{% endblock content %}
