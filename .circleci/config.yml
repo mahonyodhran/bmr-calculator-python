@@ -12,7 +12,7 @@ jobs:
           pip-dependency-file: requirements.txt 
       - run:
           name: Run tests
-          command: pytest
+          command: python -m pytest -v tests/
 
 workflows:
   startup-basic:
