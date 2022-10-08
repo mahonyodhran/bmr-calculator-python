@@ -5,6 +5,8 @@
 
 [![Heroku](https://img.shields.io/badge/Heroku-Deployed-blueviolet)](https://bmr-calculator-python.herokuapp.com/)
 
+![Heroku](https://pyheroku-badge.herokuapp.com/?app=bmr-calculator-python&style=plastic)
+
 
 
 Application to calculate the users Basel Metabolic Rate ([BMR](https://en.wikipedia.org/wiki/Basal_metabolic_rate)).
