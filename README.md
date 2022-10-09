@@ -47,7 +47,7 @@ Start the server
 
 ---
 
-` Note: If running locally, due to ENV_VARS being set for SMTP server using please do not select to receive email or it will crash - alternatively, create a .env file and make SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, DEVEMAIL variables with . I used Mailtrp for this, the email actually goes to that sandbox rather than your inbox.`
+` Note: If running locally, due to ENV_VARS being set for SMTP server using please do not select to receive email or it will crash - alternatively, create a .env file and make SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, DEVEMAIL variables. I used Mailtrap for this, the email actually goes to that sandbox rather than your inbox - for now.`
 
 ---
 
@@ -68,7 +68,7 @@ Start the server
 
 - ~~Send email on submission~~
 
-- Make email optional (prevents crashing on local runs with no ENV_VAR - works fine on Heroku)
+- ~~Make email optional (prevents crashing on local runs with no ENV_VAR - works fine on Heroku)~~
 
 - Setup connection to MySQL database
 
