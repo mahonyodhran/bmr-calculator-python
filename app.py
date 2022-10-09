@@ -12,7 +12,8 @@ def bmr_results():
     user = [request.form['email'], int(request.form['age']), request.form['weight'], request.form['height'], request.form['gender']]
     bmr = mifflin_st_jeor(user[1], float(user[2]), float(user[3]), user[4])
     user.append(bmr)
-    make_message(user[0], bmr)
+    if request.form.get('get_email_check') != None:
+        make_message(user[0], bmr)
     return render_template('bmr_results.html', user=user)
 
 if __name__ == "__main__":
