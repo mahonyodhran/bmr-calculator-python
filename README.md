@@ -78,3 +78,5 @@ Start the server
 
 - Setup some sort of data analysis route
 
+- ❗ Migrate away from Heroku as the free plans are being scrapped. Alternatives: (AWS EC2 / Render.com / railway.app / pythonanywhere.com / qoddi.com / appliku.com)
+
