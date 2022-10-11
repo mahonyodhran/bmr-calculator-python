@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from helper import mifflin_st_jeor, make_message
+from database.db_methods import select_all_users
 
 app = Flask(__name__)
 
@@ -18,7 +19,7 @@ def bmr_results():
 
 @app.route('/database_records')
 def database_records():
-    return render_template('database_records.html')
+    return render_template('database_records.html', users=select_all_users())
 
 if __name__ == "__main__":
     app.run(debug=True)
