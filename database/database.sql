@@ -18,3 +18,9 @@ CREATE TABLE `user`
 engine=innodb
 auto_increment=6
 DEFAULT charset=latin1;
+
+INSERT INTO `user`
+VALUES (1,28, 100, 180,"m",1990, "test@mail.com");
+
+INSERT INTO `user`
+VALUES (2,25, 90, 150,"m",1718, "fake@mail.com");
