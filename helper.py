@@ -10,12 +10,12 @@ from email.mime.text import MIMEText
 load_dotenv()
 
 
-def mifflin_st_jeor(age, weight, height, gender):
+def mifflin_st_jeor(new_user):
     """calculate the bmr using mifflin equation [standard for now]"""
-    if gender == "m":
-        bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5
+    if new_user.gender == "m":
+        bmr = (10 * new_user.weight) + (6.25 * new_user.height) - (5 * new_user.age) + 5
     else:
-        bmr = (10 * weight) + (6.25 * height) - (5 * age) - 161
+        bmr = (10 * new_user.weight) + (6.25 * new_user.height) - (5 * new_user.age) - 161
 
     return int(bmr)
 
