@@ -16,5 +16,9 @@ def bmr_results():
         make_message(user[0], bmr)
     return render_template('bmr_results.html', user=user)
 
+@app.route('/database_records')
+def database_records():
+    return render_template('database_records.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
