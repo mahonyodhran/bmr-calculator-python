@@ -27,10 +27,13 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+                                <a class="nav-link" aria-current="page" href="{{ url_for('index') }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Database Stats</a>
+                                <a class="nav-link" href="{{ url_for('database_records') }}" tabindex="-1" aria-disabled="true">Database Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-2" aria-disabled="true">Database Stats</a>
                             </li>
                         </ul>
                     </div>
