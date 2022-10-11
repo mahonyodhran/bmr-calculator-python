@@ -12,7 +12,6 @@ def insert_user(user):
     '''
     session.add(user)
     session.commit()
-    session.close()
 
 
 def select_all_users():
