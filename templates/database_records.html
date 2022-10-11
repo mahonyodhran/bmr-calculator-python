@@ -3,9 +3,7 @@
 
 <h1 class="display-4">Database Records</h1>
 
-<p>Coming Soon</p>
-
-<!-- <table class="table" style="text-align: center;">
+<table class="table" style="text-align: center;">
     <thead>
         <tr class="table-secondary">
             <th scope="col">Email</th>
@@ -17,12 +15,17 @@
         </tr>
     </thead>
     <tbody>
+        {% for user in users %}
         <tr>
-            {% for item in users %}
-            <td>{{ item }}</td>
-            {% endfor %}
+            <td>{{ user.email }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{ user.height }}</td>
+            <td>{{ user.weight }}</td>
+            <td>{{ user.gender }}</td>
+            <td>{{ user.bmr }}</td>
         </tr>
+        {% endfor %}
     </tbody>
-</table> -->
+</table>
 
 {% endblock content %}
