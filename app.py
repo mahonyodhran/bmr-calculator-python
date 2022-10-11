@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from helper import mifflin_st_jeor, make_message
-from database.db_methods import select_all_users
+from database.db_methods import select_all_users, insert_user
+from models.user import User
 
 app = Flask(__name__)
 
@@ -10,12 +11,13 @@ def index():
 
 @app.route('/bmr_results', methods=['POST'])
 def bmr_results():
-    user = [request.form['email'], int(request.form['age']), request.form['weight'], request.form['height'], request.form['gender']]
-    bmr = mifflin_st_jeor(user[1], float(user[2]), float(user[3]), user[4])
-    user.append(bmr)
+    new_user = User(int(request.form['age']),int(request.form['weight']), int(request.form['height']), request.form['gender'] )
+    new_user.bmr = mifflin_st_jeor(new_user)
+    new_user.email = request.form['email']
     if request.form.get('get_email_check') != None:
-        make_message(user[0], bmr)
-    return render_template('bmr_results.html', user=user)
+        make_message(new_user.email, new_user.bmr)
+    insert_user(new_user)
+    return render_template('bmr_results.html', new_user=new_user)
 
 @app.route('/database_records')
 def database_records():
