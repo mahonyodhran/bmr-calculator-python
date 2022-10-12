@@ -70,13 +70,20 @@ Start the server
 
 - ~~Make email optional (prevents crashing on local runs with no ENV_VAR - works fine on Heroku)~~
 
-- Setup connection to MySQL database
+- ~~Setup connection to MySQL database~~
 
-- Insert record into database for each input
+- ~~Create user model with SQLAlchemy~~
 
-- Setup page to display all records
+- ~~Insert record into database for each input~~
+
+- ~~Setup page to display all records~~
+
+- Create shell script to run app
+
+- Delete record from database through page database-records
 
 - Setup some sort of data analysis route
 
-- ❗ Migrate away from Heroku as the free plans are being scrapped. Alternatives: (AWS EC2 / Render.com / railway.app / pythonanywhere.com / qoddi.com / appliku.com)
+- ❓ TDEE extension
 
+- ❗ Migrate away from Heroku as the free plans are being scrapped. Alternatives: (AWS EC2 / Render.com / railway.app / pythonanywhere.com / qoddi.com / appliku.com)
