@@ -78,9 +78,7 @@ Start the server
 
 - ~~Setup page to display all records~~
 
-- Create shell script to run app
-
-- Delete record from database through page database-records
+- ~~Delete record from database through page database-records~~
 
 - Setup some sort of data analysis route
 
