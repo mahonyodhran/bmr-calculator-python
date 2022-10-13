@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from helper import mifflin_st_jeor, make_message
-from database.db_methods import select_all_users, insert_user
+from database.db_methods import select_all_users, insert_user, delete_user
 from models.user import User
 
 app = Flask(__name__)
@@ -22,6 +22,11 @@ def bmr_results():
 @app.route('/database_records')
 def database_records():
     return render_template('database_records.html', users=select_all_users())
+
+@app.route('/user_delete/<uid>')
+def user_delete(uid):
+    delete_user(uid)
+    return redirect(url_for('database_records'))
 
 if __name__ == "__main__":
     app.run(debug=True)
