@@ -22,3 +22,13 @@ def select_all_users():
     for user in session.scalars(stmt):
         users.append(user)
     return users
+
+def get_user(id):
+    user = session.query(User).get(id)
+    session.close()
+    return user
+
+def delete_user(uid):
+    user = get_user(uid)
+    session.delete(user)
+    session.commit()
