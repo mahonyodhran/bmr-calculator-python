@@ -10,7 +10,9 @@ session = Session()
 def insert_user(user):
     '''insert user record into table
     '''
-    session.add(user)
+    exists = session.query(User.email).filter_by(email=user.email).first() is not None
+    if not exists:
+        session.add(user)
     session.commit()
 
 
