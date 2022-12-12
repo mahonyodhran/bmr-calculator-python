@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<form action="{{ url_for('index') }}" method="post" class="form-bmr">
+<form action="{{ url_for('index') }}" method="post" class="form-bmr py-5">
+    <!-- Email / Age row start -->
     <div class="row">
+        <!-- Email -->
         <div class="col">
             <div class="form-outline">
                 <label class="form-label" for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
         </div>
+        <!-- Age -->
         <div class="col">
             <div class="form-outline">
                 <label class="form-label" for="age">Age:</label>
@@ -15,20 +18,25 @@
             </div>
         </div>
     </div>
+    <!-- Email / Age row end -->
     <hr />
+    <!-- Weight / Height / Gender row start -->
     <div class="row">
+        <!-- Weight -->
         <div class="col">
             <div class="form-outline">
                 <label for="weight">Weight in KG:</label>
                 <input type="number" id="weight" name="weight" min="20" max="150" required>
             </div>
         </div>
+        <!-- Height -->
         <div class="col">
             <div class="form-outline">
                 <label for="height">Height in CM:</label>
                 <input type="number" id="height" name="height" min="100" max="250" required>
             </div>
         </div>
+        <!-- Gender -->
         <div class="col">
             <div class="form-outline">
                 <div>
@@ -43,17 +51,22 @@
             </div>
         </div>
     </div>
+    <!-- Weight / Height / Gender row end -->
     <hr />
+    <!-- Get email / Submit row start -->
     <div class="row">
+        <!-- Get email -->
         <div class="col visible" title="Email goes to sandbox - not you">
             <input class="form-check-input" type="checkbox"name = "get_email_check" id="get_email_check">
             <label class="form-check-label" for="get_email_check">
                 Get Email?
             </label>
         </div>
+        <!-- Submit -->
         <div class="col">
-            <button type="submit" class="btn btn-primary">Get BMR</button>
+            <button type="submit" class="btn btn-outline-danger">Get BMR</button>
         </div>
     </div>
+    <!-- Get email / Submit row end -->
 </form>
 {% endblock content %}
