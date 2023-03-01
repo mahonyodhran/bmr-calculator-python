@@ -48,12 +48,3 @@ Start the server
 ` Note: If running locally, due to ENV_VARS being set for SMTP server using please do not select to receive email or it will crash - alternatively, create a .env file and make SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, DEVEMAIL variables. I used Mailtrap for this, the email actually goes to that sandbox rather than your inbox - for now.`
 
 ---
-
-
-## Roadmap
-
-[![trello](https://img.shields.io/badge/Trello-Kanban-blue)](https://trello.com/b/sZhFXoDW/bmr-calculator)
-
-- Setup some sort of data analysis route
-
-- ❓ TDEE extension
