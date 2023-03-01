@@ -2,7 +2,7 @@
 
 ## Description
 Application to calculate the users Basel Metabolic Rate ([BMR](https://en.wikipedia.org/wiki/Basal_metabolic_rate)).
-Each input will be stored in a MySQL database where down the line analysis of the records will be done and displayed.
+Each input will be stored in a MySQL database and an email is sent to a sandbox email address using Mailtrap to simulate the user getting an email if they tick the box.
 
 
 ## Status
