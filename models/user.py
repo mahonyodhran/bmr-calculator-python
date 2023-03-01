@@ -1,4 +1,4 @@
-from sqlalchemy import CHAR, Column, SmallInteger, String, Integer
+from sqlalchemy import CHAR, Column, SmallInteger, String, Integer, Float
 
 from database.db_connector import Base
 
@@ -8,7 +8,7 @@ class User(Base):
 
     id = Column(Integer, primary_key=True)
     age = Column(SmallInteger)
-    weight = Column(SmallInteger)
+    weight = Column(Float)
     height = Column(SmallInteger)
     gender = Column(CHAR)
     bmr = Column(SmallInteger)
