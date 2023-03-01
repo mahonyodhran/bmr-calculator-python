@@ -19,3 +19,6 @@ class User(Base):
         self.weight = weight
         self.height = height
         self.gender = gender
+
+test_male = User(28, 100, 180, 'm')
+test_female = User(28, 100, 180, 'f')
