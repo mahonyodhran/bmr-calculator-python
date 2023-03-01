@@ -19,6 +19,14 @@ def mifflin_st_jeor(new_user):
 
     return int(bmr)
 
+def mifflin_st_jeor(age, weight, height, gender):
+    """calculate the bmr using mifflin equation [standard for now]"""
+    if gender == "m":
+        bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5
+    else:
+        bmr = (10 * weight) + (6.25 * height) - (5 * age) - 161
+
+    return int(bmr)
 
 def send_message(message, sender, receiver):
     with smtplib.SMTP(
