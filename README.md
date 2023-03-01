@@ -54,32 +54,6 @@ Start the server
 
 [![trello](https://img.shields.io/badge/Trello-Kanban-blue)](https://trello.com/b/sZhFXoDW/bmr-calculator)
 
-- ~~Create route for the calculator/landing page~~
-
-- ~~Create basic form for input~~ 
-
-- ~~Validate form inputs~~
-
-- ~~Configure POST request~~
-
-- ~~Calculate BMR off of form submission~~
-
-- ~~Send email on submission~~
-
-- ~~Make email optional (prevents crashing on local runs with no ENV_VAR - works fine on Heroku)~~
-
-- ~~Setup connection to MySQL database~~
-
-- ~~Create user model with SQLAlchemy~~
-
-- ~~Insert record into database for each input~~
-
-- ~~Setup page to display all records~~
-
-- ~~Delete record from database through page database-records~~
-
 - Setup some sort of data analysis route
 
 - ❓ TDEE extension
-
-- ❗ Migrate away from Heroku as the free plans are being scrapped. Alternatives: (AWS EC2 / Render.com / railway.app / pythonanywhere.com / qoddi.com / appliku.com)
