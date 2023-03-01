@@ -8,7 +8,7 @@ CREATE TABLE `user`
   (
      `id`     INT(11) NOT NULL auto_increment,
      `age`    TINYINT NOT NULL,
-     `weight` SMALLINT NOT NULL,
+     `weight` FLOAT NOT NULL,
      `height` SMALLINT NOT NULL,
      `gender` CHAR(1) NOT NULL,
      `bmr` SMALLINT NOT NULL,
