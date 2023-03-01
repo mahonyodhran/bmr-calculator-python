@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from helper import mifflin_st_jeor, make_message
-from database.db_methods import select_all_users, insert_user, delete_user, get_user
+from database.db_methods import select_all_users, insert_user, delete_user
 from models.user import User
 
 app = Flask(__name__)
@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        new_user = User(int(request.form['age']),int(request.form['weight']), int(request.form['height']), request.form['gender'] )
+        new_user = User(int(request.form['age']),float(request.form['weight']), int(request.form['height']), request.form['gender'] )
         new_user.bmr = mifflin_st_jeor(new_user)
         new_user.email = request.form['email']
         if request.form.get('get_email_check') != None:
